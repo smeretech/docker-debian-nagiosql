@@ -29,7 +29,7 @@ ADD etc /etc/nagiosql
 ADD nagioscfg.append /nagioscfg.append
 ADD confignagiosql.sh /confignagiosql.sh
 RUN /confignagiosql.sh
-RUN /opt/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+RUN /opt/nagios/bin/nagios -v /opt/nagios/etc/nagios.cfg
 
 # Patch PHP's config
 RUN sed -e 's/;date.timezone =/date.timezone = UTC/' /etc/php5/apache2/php.ini > /tmp.ini
