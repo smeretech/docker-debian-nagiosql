@@ -27,7 +27,7 @@ chmod 770 /opt/nagios/bin/nagios
 
 chgrp www-data /usr/local/nagiosql/config
 chmod 775 /usr/local/nagiosql/config
-chmod -R 644 /usr/local/nagiosql/config/settings.php
+chmod -R 664 /usr/local/nagiosql/config/settings.php
 chown -R www-data.nagios /usr/local/nagiosql/config/settings.php
 
 chown -R www-data.nagios /opt/nagios/var

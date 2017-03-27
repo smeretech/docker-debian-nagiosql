@@ -12,5 +12,6 @@ docker-debian-nagios:
       NAGIOSADM_PW: nagios
    ports:
       - "10080:80"
+      - "10022:22"
    links:
       - db
