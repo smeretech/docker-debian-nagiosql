@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Patch out the sample configuration
-sed -e 's/^cfg_file=/#cfg_file=/' /etc/nagios/nagios.cfg > /tmp.cfg
+sed -e 's/^cfg_file=/#cfg_file=/g' /etc/nagios/nagios.cfg > /tmp.cfg
 mv /tmp.cfg /etc/nagios/nagios.cfg
 
 cat /nagioscfg.append >> /etc/nagios/nagios.cfg
